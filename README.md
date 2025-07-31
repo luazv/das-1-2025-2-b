@@ -29,11 +29,37 @@ enquanto em outra parte usa-se um outro padrão (por exemplo, snake case, como e
 
 -Quando uma parte do sistema usa um determinado framework para manipulação de páginas Web,
 enquanto em outra parte usa-se um segundo framework ou então uma versão diferente do primeiro framework.
+    -A importância na escolha de uma framework
 
 -Quando em uma parte do sistema resolve-se um problema usando-se uma estrutura de dados X,
-enquanto que, em outra parte, um problema parecido é resolvido por meio de uma estrutura Y.
+enquanto que, em outra parte, um problema parecido é resolvido por meio de uma estrutura Y. 
+    -A importância de se aprofundar em estruturas de dados para entrevistas de grande nível
 
 -Quando funções de uma parte do sistema que precisam de uma determinada informação — por exemplo,
 o endereço de um servidor — a obtém diretamente de um arquivo de configuração. Porém, em outras funções,
 de outras partes do sistema, a mesma informação deve ser passada como parâmetro.
+
+# Informações ocultas
+Citado em dos artigos mais importantes e influentes da área de Engenharia de Software,
+de todos os tempos, cujo título é On the criteria to be used in decomposing systems into modules. 
+
+Consumo de uma interface para determinada função que é realizada pelas classes. Ou seja não é necessário
+o código visível para o usuário, mas ele irá necessitar de comandos para realizar funções de
+um sistema. 
+
+Vantagens: 
+
+-Desenvolvimento em paralelo. Suponha que um sistema X foi implementado por meio de classes C1, C2, …, Cn.
+Quando essas classes ocultam suas principais informações, fica mais fácil implementá-las em paralelo,
+por desenvolvedores diferentes. Consequentemente, teremos uma redução no tempo total de implementação do sistema.
+
+-Flexibilidade a mudanças. Por exemplo, suponha que descobrimos que a classe Ci é responsável pelos problemas de desempenho do sistema.
+Quando detalhes de implementação de Ci são ocultados do resto do sistema, fica mais fácil trocar sua implementação por uma classe Ci',
+que use estruturas de dados e algoritmos mais eficientes. Essa troca também é mais segura, pois como as classes são independentes,
+diminui-se o risco de a mudança introduzir bugs em outras classes.
+
+-Facilidade de entendimento. Por exemplo, um novo desenvolvedor contratado pela
+empresa pode ser alocado para trabalhar em algumas classes apenas. Portanto,
+ele não precisará entender toda a complexidade do sistema, mas apenas a implementação
+das classes pelas quais ficou responsável.
 
