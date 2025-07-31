@@ -57,6 +57,7 @@ por desenvolvedores diferentes. Consequentemente, teremos uma redução no tempo
 Quando detalhes de implementação de Ci são ocultados do resto do sistema, fica mais fácil trocar sua implementação por uma classe Ci',
 que use estruturas de dados e algoritmos mais eficientes. Essa troca também é mais segura, pois como as classes são independentes,
 diminui-se o risco de a mudança introduzir bugs em outras classes.
+    -Evoluir o sistema sem quebrar o código
 
 -Facilidade de entendimento. Por exemplo, um novo desenvolvedor contratado pela
 empresa pode ser alocado para trabalhar em algumas classes apenas. Portanto,
