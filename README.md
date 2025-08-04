@@ -43,7 +43,7 @@ de outras partes do sistema, a mesma informação deve ser passada como parâmet
 Citado em dos artigos mais importantes e influentes da área de Engenharia de Software,
 de todos os tempos, cujo título é On the criteria to be used in decomposing systems into modules. 
 
-Consumo de uma interface para determinada função que é realizada pelas classes. Ou seja não é necessário
+Consumo de uma interface para determinada função que é realizada pelas classes (guarda o comportamento). Ou seja não é necessário
 o código visível para o usuário, mas ele irá necessitar de comandos para realizar funções de
 um sistema. 
 
@@ -63,4 +63,30 @@ diminui-se o risco de a mudança introduzir bugs em outras classes.
 empresa pode ser alocado para trabalhar em algumas classes apenas. Portanto,
 ele não precisará entender toda a complexidade do sistema, mas apenas a implementação
 das classes pelas quais ficou responsável.
+
+# Get e set
+
+É uma forma de encapsular para proteger informações. 
+
+# O que é uma coesão?
+
+Toda classe deve ser coesa, ou seja cada classe com sua funcionalidade. E quais as vantagens dessa coesão?
+- Auxilia no entendimento e manutenção
+- Auxilia no reúso por ser mais simples
+- Auxilia nos testes
+
+# Acoplamento 
+
+Exemplo: USB ele não está acoplado, qualquer momento que retiro e coloco em outro dispositivo ele conecta, ao contrário do acoplamento, pois tudo está conectado 
+
+Resumidamente o objetivo do acoplamento é que duas coisas não conversem diretamente. 
+
+# Clean code e SOLID
+
+[S]ingle Responsibility Principle (Princípio da Responsabilidade Única)
+[O]pen/Closed Principle (Princípio do Aberto/Fechado)
+[L]iskov Substitution Principle (Princípio da Substituição de Liskov)
+[I]nterface Segregation Principle (Princípio da Segregação de Interfaces)
+[D]ependency Inversion Principle (Princípio da Inversão de Dependências)
+
 
