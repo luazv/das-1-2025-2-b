@@ -81,17 +81,29 @@ Exemplo: USB ele não está acoplado, qualquer momento que retiro e coloco em ou
 
 Resumidamente o objetivo do acoplamento é que duas coisas não conversem diretamente. 
 
-# Clean code e SOLID
+# Clean code & SOLID
 
-[S]ingle Responsibility Principle
+# Single Responsibility Principle
     (Princípio da Responsabilidade Única)
-[O]pen/Closed Principle
+Aplicação direta da ideia da coesão. 
+É uma maneira de identificar o motivo de uma mudança. 
+Um dos princípios recomenda separar apresentação de regras de negócio. Por exemplo: Services <- lógica (use cases), entity <- dados, repository <- JPA spring data, controller <- api rest
+**Cada um tem sua responsabilidade. (lógicas diferentes)**
+
+# Open/Closed Principle
     (Princípio do Aberto/Fechado)
-[L]iskov Substitution Principle
+
+# Liskov Substitution Principle
     (Princípio da Substituição de Liskov)
-[I]nterface Segregation Principle
+
+# Interface Segregation Principle
     (Princípio da Segregação de Interfaces)
-[D]ependency Inversion Principle
+O objetivo é que os usuários utilizem interfaces somente necessárias, dessa maneira com métodos apenas essenciais. 
+Se eu quero "ouvir" um botão é necessário uma interface para isso, assim como se eu quero "ouvir" o movimento de outra coisa deve haver uma interface para isso, mas é importante não adequar uma interface para várias coisas. 
+
+# Dependency Inversion Principle
     (Princípio da Inversão de Dependências)
+
+Programar a orientação a objetos 
 
 
