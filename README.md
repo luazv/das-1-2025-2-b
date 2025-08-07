@@ -81,6 +81,7 @@ Exemplo: USB ele não está acoplado, qualquer momento que retiro e coloco em ou
 
 Resumidamente o objetivo do acoplamento é que duas coisas não conversem diretamente. 
 
+# 07 ago 2025
 # Clean code & SOLID
 
 # Single Responsibility Principle
@@ -104,6 +105,6 @@ Se eu quero "ouvir" um botão é necessário uma interface para isso, assim como
 # Dependency Inversion Principle
     (Princípio da Inversão de Dependências)
 
-Programar a orientação a objetos 
+
 
 
