@@ -147,6 +147,8 @@ de atributos da classe do método (caso 4)
 
 # Open/Closed Principle
     (Princípio do Aberto/Fechado)
+Uma classe deve estar fechada para modificações e aberta para extensões. 
+É para haver um controle sob o código, mas com a possibilidade de outras pessoas trabalharem por cima do meu código. 
 
 # Liskov Substitution Principle
     (Princípio da Substituição de Liskov)
