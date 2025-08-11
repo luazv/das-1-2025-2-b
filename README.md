@@ -126,14 +126,14 @@ class C2 implements I {
 
 Prefira Interfaces a Classes. Qual o objetivo? Reduzir acoplamento. 
 
-* Prefira Composição a Herança 
+Prefira Composição a Herança 
 Por que? Na herança herda tudo, a herança expõe para subclasses detalhes de implementação das classes pai. Logo, frequentemente diz-se que
 herança viola o encapsulamento das classes pai, ou seja dificulta todo o desenvolvimento. Utilize as associações. 
 
 E quando posso usar a herança? 
 Quando os filhos de uma superclasse não tiverem como um substituir o outro. 
 Exemplo de modelagem de dados:
-- A classe sendo Animal e as subclasses sendo gato e cachorro. Concorda que o gato não pode tornar-se um cachorro? Nesse caso usa-se a herança, mas em um
+A classe sendo Animal e as subclasses sendo gato e cachorro. Concorda que o gato não pode tornar-se um cachorro? Nesse caso usa-se a herança, mas em um
 outro contexto se a classe for Pessoa e as subclasses funcionários e clientes não é adequado, pois uma vez modelado assim o funcionário não pode tornar-se cliente.
 
 **Principio Demiter (Principio do menor conhecimento)**
