@@ -145,33 +145,6 @@ de objetos criados pelo próprio método (caso 3)
 
 de atributos da classe do método (caso 4)
 
-Exemplo de código:
-
-class Motor:
-    def ligar(self):
-        print("Motor ligado")  # método simples para ligar o motor
-
-class Carro:
-    def __init__(self):
-        self.motor = Motor()  # (caso 4) atributo da própria classe Carro
-    
-    def caso1(self):
-        print("Só conhece a si mesmo")  
-        # método conhece só sua própria classe (não acessa nada externo)
-
-    def caso2(self, motor):
-        motor.ligar()  
-        # (caso 2) conhece só o objeto passado como parâmetro e usa seu método
-
-    def caso3(self):
-        m = Motor()    
-        m.ligar()  
-        # (caso 3) cria um objeto local dentro do método e usa ele
-
-    def caso4(self):
-        self.motor.ligar()  
-        # (caso 4) usa atributo da própria classe e chama seu método
-
 # Open/Closed Principle
     (Princípio do Aberto/Fechado)
 
