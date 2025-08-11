@@ -88,8 +88,89 @@ Resumidamente o objetivo do acoplamento é que duas coisas não conversem direta
     (Princípio da Responsabilidade Única)
 Aplicação direta da ideia da coesão. 
 É uma maneira de identificar o motivo de uma mudança. 
-Um dos princípios recomenda separar apresentação de regras de negócio. Por exemplo: Services <- lógica (use cases), entity <- dados, repository <- JPA spring data, controller <- api rest
+Um dos princípios recomenda separar apresentação de regras de negócio. 
+Por exemplo: 
+- Services <- lógica (use cases);
+- Entity <- dados;
+- Repository <- JPA spring data;
+- Controller <- api rest. 
 **Cada um tem sua responsabilidade. (lógicas diferentes)**
+
+# Interface Segregation Principle
+    (Princípio da Segregação de Interfaces)
+O objetivo é que os usuários utilizem interfaces somente necessárias, dessa maneira com métodos apenas essenciais. 
+Se eu quero "ouvir" um botão é necessário uma interface para isso, assim como se eu quero "ouvir" o movimento de
+outra coisa deve haver uma interface para isso, mas é importante não adequar uma interface para várias coisas. 
+
+11 ago 2025
+
+# Dependency Inversion Principle
+    (Princípio da Inversão de Dependências)
+Esse princípio recomenda que uma classe cliente (que precisa de alguma coisa), por exemplo: controladores e deve estabelecer dependências prioritariamente com abstrações (por exemplo: interfaces de serviço) e não com implementações concretas.
+pois abstrações (isto é, interfaces) são mais estáveis do que implementações concretas (isto é, classes).
+
+Utilizando o @autowired o controlador se conecta com a interface e a interface conecta-se com o código. Servindo como ponte. (Resumindo: O cliente não conhece só uma interface e alguém vai passar para ele)
+
+Por exemplo: 
+esse seria o ClienteService:
+interface I { ... } 
+
+esse seria o ClienteServiceImpl:
+class C1 implements I { 
+  ...
+}
+esse seria o ClienteServiceImpl2:
+class C2 implements I {
+  ...
+}
+
+Prefira Interfaces a Classes. Qual o objetivo? Reduzir acoplamento. 
+
+* Prefira Composição a Herança 
+Por que? Na herança herda tudo, a herança expõe para subclasses detalhes de implementação das classes pai. Logo, frequentemente diz-se que
+herança viola o encapsulamento das classes pai, ou seja dificulta todo o desenvolvimento. Utilize as associações. 
+
+E quando posso usar a herança? 
+Quando os filhos de uma superclasse não tiverem como um substituir o outro. 
+Exemplo de modelagem de dados:
+- A classe sendo Animal e as subclasses sendo gato e cachorro. Concorda que o gato não pode tornar-se um cachorro? Nesse caso usa-se a herança, mas em um
+outro contexto se a classe for Pessoa e as subclasses funcionários e clientes não é adequado, pois uma vez modelado assim o funcionário não pode tornar-se cliente.
+
+**Principio Demiter (Principio do menor conhecimento)**
+de sua própria classe (caso 1)
+
+de objetos passados como parâmetros (caso 2)
+
+de objetos criados pelo próprio método (caso 3)
+
+de atributos da classe do método (caso 4)
+
+Exemplo de código:
+
+class Motor:
+    def ligar(self):
+        print("Motor ligado")  # método simples para ligar o motor
+
+class Carro:
+    def __init__(self):
+        self.motor = Motor()  # (caso 4) atributo da própria classe Carro
+    
+    def caso1(self):
+        print("Só conhece a si mesmo")  
+        # método conhece só sua própria classe (não acessa nada externo)
+
+    def caso2(self, motor):
+        motor.ligar()  
+        # (caso 2) conhece só o objeto passado como parâmetro e usa seu método
+
+    def caso3(self):
+        m = Motor()    
+        m.ligar()  
+        # (caso 3) cria um objeto local dentro do método e usa ele
+
+    def caso4(self):
+        self.motor.ligar()  
+        # (caso 4) usa atributo da própria classe e chama seu método
 
 # Open/Closed Principle
     (Princípio do Aberto/Fechado)
@@ -97,13 +178,7 @@ Um dos princípios recomenda separar apresentação de regras de negócio. Por e
 # Liskov Substitution Principle
     (Princípio da Substituição de Liskov)
 
-# Interface Segregation Principle
-    (Princípio da Segregação de Interfaces)
-O objetivo é que os usuários utilizem interfaces somente necessárias, dessa maneira com métodos apenas essenciais. 
-Se eu quero "ouvir" um botão é necessário uma interface para isso, assim como se eu quero "ouvir" o movimento de outra coisa deve haver uma interface para isso, mas é importante não adequar uma interface para várias coisas. 
 
-# Dependency Inversion Principle
-    (Princípio da Inversão de Dependências)
 
 
 
