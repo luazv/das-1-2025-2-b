@@ -102,7 +102,7 @@ O objetivo é que os usuários utilizem interfaces somente necessárias, dessa m
 Se eu quero "ouvir" um botão é necessário uma interface para isso, assim como se eu quero "ouvir" o movimento de
 outra coisa deve haver uma interface para isso, mas é importante não adequar uma interface para várias coisas. 
 
-11 ago 2025
+# 11 ago 2025
 
 # Dependency Inversion Principle
     (Princípio da Inversão de Dependências)
