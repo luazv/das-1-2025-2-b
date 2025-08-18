@@ -150,11 +150,11 @@ de atributos da classe do método (caso 4)
 Uma classe deve estar fechada para modificações e aberta para extensões. 
 É para haver um controle sob o código, mas com a possibilidade de outras pessoas trabalharem por cima do meu código. 
 
+
 # Liskov Substitution Principle
     (Princípio da Substituição de Liskov)
 
-
-
+Acontece quando há uma super classe, e eu tenho várias subclasses que herdam desse pai, certo. Para que a subclasse, a classe de as filhos, tenham exatamente os mesmos métodos do pai. Pra eu poder trocar entre filhos sem quebrar o código, essa é a ideia.
 
 
 
