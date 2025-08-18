@@ -145,6 +145,8 @@ de objetos criados pelo próprio método (caso 3)
 
 de atributos da classe do método (caso 4)
 
+Todo o código chama um objeto
+
 # Open/Closed Principle
     (Princípio do Aberto/Fechado)
 Uma classe deve estar fechada para modificações e aberta para extensões. 
@@ -157,4 +159,5 @@ Uma classe deve estar fechada para modificações e aberta para extensões.
 Acontece quando há uma super classe, e eu tenho várias subclasses que herdam desse pai, certo. Para que a subclasse, a classe de as filhos, tenham exatamente os mesmos métodos do pai. Pra eu poder trocar entre filhos sem quebrar o código, essa é a ideia.
 
 
+# Padrões de Projeto
 
