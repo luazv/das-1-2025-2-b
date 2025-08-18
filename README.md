@@ -161,3 +161,12 @@ Acontece quando há uma super classe, e eu tenho várias subclasses que herdam d
 
 # Padrões de Projeto
 
+Link site Design Patterns: https://refactoring.guru/design-patterns
+
+Soluções para problemas que encontramos no código. 
+
+Tipo: Creational Patterns
+1. Singleton
+é um padrão de design criacional que permite garantir que uma classe tenha apenas uma instância, ao mesmo tempo em que fornece um ponto de acesso global a essa instância.
+
+
