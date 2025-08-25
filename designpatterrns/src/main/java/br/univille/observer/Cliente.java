@@ -2,16 +2,20 @@ package br.univille.singleton;
 
 public class Cliente {
     public static void main(String[] args) {
-        var segredo = "Palmeiras tem mundial";
+        var grupoFamilia = new Publisher();
 
-        var singleton = Singleton.getInstance();
-        singleton.setSegredo(segredo);
+        var zezinho = new ConcreteSubscriber();
+        var huguinho = new ConcreteSubscriber();
+        var tia = new ConcreteSubscriber();
 
-        //mil milhões de anos depois....
-        //varias e varias linhas de codigo depois
-        System.out.println(
-            Singleton.getInstance().getSegredo()
-        );
+        //entrou no grupo da familia
+        grupoFamilia.subscribe(zezinho);
+        grupoFamilia.subscribe(huguinho);
+        grupoFamilia.subscribe(tia);
+
+        grupoFamilia.setMainState("BOM DIAAA <3 ");
+        //botao enviar
+        grupoFamilia.notifySubscribers();
 
     }
 }
