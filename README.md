@@ -76,10 +76,10 @@ Toda classe deve ser coesa, ou seja cada classe com sua funcionalidade. E quais 
 - Auxilia nos testes
 
 # Acoplamento 
+ Indica quanto um módulo depende de outro para funcionar. Códigos desacoplados são aqueles de relação fraca, e não dependem de outros para fazer sua funcionalidade básica. É sempre desejável um baixo nível de acoplamento.
 
-Exemplo: USB ele não está acoplado, qualquer momento que retiro e coloco em outro dispositivo ele conecta, ao contrário do acoplamento, pois tudo está conectado 
-
-Resumidamente o objetivo do acoplamento é que duas coisas não conversem diretamente. 
+Quando há baixo acoplamento, a aplicação fica mais flexível, reusável e mais organizada.
+Exemplo: USB 
 
 # 07 ago 2025
 # Clean code & SOLID
@@ -170,15 +170,17 @@ Tipo: Creational Patterns
 é um padrão de design criacional que permite garantir que uma classe tenha apenas uma instância, ao mesmo tempo em que fornece um ponto de acesso global a essa instância.
 
 
-# 28.08
+# 28 ago 2025
 Para definir uma estrutura da arquitetura são divididas em três pontos principais:
 
 1. Características da arquitetura
 Requisitos não funcionais, ou seja, não tem necessidade de saber as funcionalidades do sistema, mas se não houver esses requisitos não funcionais da forma correta, o sistema será comprometido. Eles estão ligados diretamente a expectativa do úsuario final.
 
 2. Princípios do design
+-Evitar acoplamento, de que maneira? Por meio da troca de mensagem assincrona. É uma maneira de um serviço que tem algo importante alerta a mensagem e quem tem interesse fica esperando e ouve essas mensagens importantes. 
+-Uma boa prática que deve ser seguida
 
 3. Decisões da arquitetura 
-
+É a escolha no inicio do projeto que irar permanecer até o final do projeto, ou seja, será a tecnologia utilizada naquele sistema e o mais "aconselhável" seria a tecnologia que mais temos intimidade. Dessa forma irá dominar de uma maneira mais eficaz e não irá perder tempo aprendendo outra tecnologia e realizando o projeto, mas utilizando esse tempo que seria para aprender essa nova tecnologia irá aprimorar seu projeto. 
 
 Esses três pontos guiam o estilo de arquitetura. 
