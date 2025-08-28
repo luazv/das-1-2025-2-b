@@ -170,3 +170,15 @@ Tipo: Creational Patterns
 é um padrão de design criacional que permite garantir que uma classe tenha apenas uma instância, ao mesmo tempo em que fornece um ponto de acesso global a essa instância.
 
 
+# 28.08
+Para definir uma estrutura da arquitetura são divididas em três pontos principais:
+
+1. Características da arquitetura
+Requisitos não funcionais, ou seja, não tem necessidade de saber as funcionalidades do sistema, mas se não houver esses requisitos não funcionais da forma correta, o sistema será comprometido. Eles estão ligados diretamente a expectativa do úsuario final.
+
+2. Princípios do design
+
+3. Decisões da arquitetura 
+
+
+Esses três pontos guiam o estilo de arquitetura. 
