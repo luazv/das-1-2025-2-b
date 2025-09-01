@@ -68,6 +68,8 @@ das classes pelas quais ficou responsável.
 
 É uma forma de encapsular para proteger informações. 
 
+# 04 ago 2025
+
 # O que é uma coesão?
 
 Toda classe deve ser coesa, ou seja cada classe com sua funcionalidade. E quais as vantagens dessa coesão?
@@ -152,6 +154,7 @@ Todo o código chama um objeto
 Uma classe deve estar fechada para modificações e aberta para extensões. 
 É para haver um controle sob o código, mas com a possibilidade de outras pessoas trabalharem por cima do meu código. 
 
+# 14 ago 2025
 
 # Liskov Substitution Principle
     (Princípio da Substituição de Liskov)
@@ -165,9 +168,15 @@ Link site Design Patterns: https://refactoring.guru/design-patterns
 
 Soluções para problemas que encontramos no código. 
 
+# 21 ago 2025
+
 Tipo: Creational Patterns
 1. Singleton
 é um padrão de design criacional que permite garantir que uma classe tenha apenas uma instância, ao mesmo tempo em que fornece um ponto de acesso global a essa instância.
+
+Observer 
+é um padrão de design comportamental que permite definir um mecanismo de assinatura para notificar vários objetos sobre quaisquer eventos que aconteçam com o objeto que eles estão observando.
+
 
 
 # 28 ago 2025
@@ -184,3 +193,13 @@ Requisitos não funcionais, ou seja, não tem necessidade de saber as funcionali
 É a escolha no inicio do projeto que irar permanecer até o final do projeto, ou seja, será a tecnologia utilizada naquele sistema e o mais "aconselhável" seria a tecnologia que mais temos intimidade. Dessa forma irá dominar de uma maneira mais eficaz e não irá perder tempo aprendendo outra tecnologia e realizando o projeto, mas utilizando esse tempo que seria para aprender essa nova tecnologia irá aprimorar seu projeto. 
 
 Esses três pontos guiam o estilo de arquitetura. 
+
+# 01 set 2025
+
+Expectativas de um arquiteto: Tomar decisões difíceis. 
+
+O arquiteto é "chamado" para auxiliar em verificar o problema e identificar o que está quebrando a arquitetura do sistema, mas a arquitetura deve se manter atualizada para aprimorar o software da empresa. E ele auxilia em como essas decisões e as tendências mais atuais podem melhorar a empresa. Além disso o arquiteto deve ter a voz do cliente dentro da empresa, então ele deve lidar com políticas.
+Ele deve evitar erros comuns devido suas experiências por isso a orientação dele é um dos papéis mais importantes. 
+
+
+Segredo do arquiteto :closed_lock_with_key:  
