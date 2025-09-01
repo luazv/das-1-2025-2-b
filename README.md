@@ -24,18 +24,18 @@ E uma maneira de auxiliar é dividir a complexidade em divisões menores, porque
 Porque são com os objetos que representamos todas as coisas. 
 
 # Boas práticas 
--Quando uma parte do sistema usa um padrão de nomes para variáveis (por exemplo, camel case, como em notaTotal),
+- Quando uma parte do sistema usa um padrão de nomes para variáveis (por exemplo, camel case, como em notaTotal),
 enquanto em outra parte usa-se um outro padrão (por exemplo, snake case, como em nota_total).
 
--Quando uma parte do sistema usa um determinado framework para manipulação de páginas Web,
+- Quando uma parte do sistema usa um determinado framework para manipulação de páginas Web,
 enquanto em outra parte usa-se um segundo framework ou então uma versão diferente do primeiro framework.
     -A importância na escolha de uma framework
 
--Quando em uma parte do sistema resolve-se um problema usando-se uma estrutura de dados X,
+- Quando em uma parte do sistema resolve-se um problema usando-se uma estrutura de dados X,
 enquanto que, em outra parte, um problema parecido é resolvido por meio de uma estrutura Y. 
     -A importância de se aprofundar em estruturas de dados para entrevistas de grande nível
 
--Quando funções de uma parte do sistema que precisam de uma determinada informação — por exemplo,
+- Quando funções de uma parte do sistema que precisam de uma determinada informação — por exemplo,
 o endereço de um servidor — a obtém diretamente de um arquivo de configuração. Porém, em outras funções,
 de outras partes do sistema, a mesma informação deve ser passada como parâmetro.
 
@@ -49,7 +49,7 @@ um sistema.
 
 Vantagens: 
 
--Desenvolvimento em paralelo. Suponha que um sistema X foi implementado por meio de classes C1, C2, …, Cn.
+- Desenvolvimento em paralelo. Suponha que um sistema X foi implementado por meio de classes C1, C2, …, Cn.
 Quando essas classes ocultam suas principais informações, fica mais fácil implementá-las em paralelo,
 por desenvolvedores diferentes. Consequentemente, teremos uma redução no tempo total de implementação do sistema.
 
