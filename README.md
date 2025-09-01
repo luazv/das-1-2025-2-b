@@ -203,3 +203,34 @@ Ele deve evitar erros comuns devido suas experiências por isso a orientação d
 
 
 Segredo do arquiteto :closed_lock_with_key:  
+O primeiro segredo para a eficiência e o sucesso na função de arquiteto de software depende de compreender e praticar cada uma dessas expectativas.
+
+* Análise contínua da arquitetura
+O primeiro segredo para a eficiência e o sucesso na função de arquiteto de software depende de compreender e praticar cada uma dessas expectativas ou seja O primeiro segredo para a eficiência e o sucesso na função de arquiteto de software depende de compreender e praticar cada uma dessas expectativas.
+
+Existe a técnica conhecida como análise estática de código que identifica erros ou vulnerabilidas no código-fonte e auxilia na qualidade de software e detecção PRECOCE de um problema. 
+
+* Conhecimento do negócio
+Capacidade de entender o cliente e levar a expectativa do cliente para a equipe, ele deve ter um bom domínio no negócio da empresa. 
+
+* Lidar com questões políticas 
+Clima político da empresa e conseguir lidar bem com ele.
+
+* Operações/DevOps
+O objetivo do devOps é entregar valor. Deixar a "briga" de lado e trabalhar em equipe.
+
+Etapas:
+-Planejar (Utilizar metodologias ágeis)
+-Criar
+-Integração (Controle de versão)
+-Implantar (colocar para funcionar na empresa)
+-Operar (monitorar, controlar, está melhor que a última versão?)
+-Comentários contínuos (feedback)
+
+Mas não finaliza no último tópico, pois é um ciclo. Esse ciclo faz nascer a colaboração e um ponto principal é todos sabendo tudo. Como assim? Todos sabem resolver um erro, não existe erro de uma pessoa, mas erro de toda equipe caso haja algo. Isso é devOps como cultura, mas como cargo há uma equipe somente para isso e esses dois modelos funcionam, não existe modelo certo ou errado. 
+
+Essa técnica reduz tempo de ciclo. Não imediatamente, mas ao longo do tempo, conforme a implantação da técnica. 
+
+
+
+
