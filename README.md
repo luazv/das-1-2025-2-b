@@ -53,13 +53,13 @@ Vantagens:
 Quando essas classes ocultam suas principais informações, fica mais fácil implementá-las em paralelo,
 por desenvolvedores diferentes. Consequentemente, teremos uma redução no tempo total de implementação do sistema.
 
--Flexibilidade a mudanças. Por exemplo, suponha que descobrimos que a classe Ci é responsável pelos problemas de desempenho do sistema.
+- Flexibilidade a mudanças. Por exemplo, suponha que descobrimos que a classe Ci é responsável pelos problemas de desempenho do sistema.
 Quando detalhes de implementação de Ci são ocultados do resto do sistema, fica mais fácil trocar sua implementação por uma classe Ci',
 que use estruturas de dados e algoritmos mais eficientes. Essa troca também é mais segura, pois como as classes são independentes,
 diminui-se o risco de a mudança introduzir bugs em outras classes.
     -Evoluir o sistema sem quebrar o código
 
--Facilidade de entendimento. Por exemplo, um novo desenvolvedor contratado pela
+- Facilidade de entendimento. Por exemplo, um novo desenvolvedor contratado pela
 empresa pode ser alocado para trabalhar em algumas classes apenas. Portanto,
 ele não precisará entender toda a complexidade do sistema, mas apenas a implementação
 das classes pelas quais ficou responsável.
@@ -232,6 +232,13 @@ Mas não finaliza no último tópico, pois é um ciclo. Esse ciclo faz nascer a 
 
 Essa técnica reduz tempo de ciclo. Não imediatamente, mas ao longo do tempo, conforme a implantação da técnica. 
 
+# 04 set 2025
+
+Arquitetura X Design
+
+Como visto anteriormente o arquiteto deve ter uma visão ampliada de todo espaço e de "tudo" que está sendo realizado e assim ele irá conectar o cliente ao desenvolvedor e é nessa transição que pode haver uma confusão entre as responsabilidades de cada membro da equipe e a arquitetura e o design. 
+
+* E como isso pode ser resolvido? Por meio da comunicação, como o ditado popular "quem tem boca vai a Roma" assim também acontece no sucesso de um projeto se houver comunicação entre todos os envolvidos que fazem o projeto ser um projeto. Não deve haver uma quebra de expectativa entre arquiteto, desenvolvedores e usuário final (cliente). Sendo assim as barreiras físicas e virtuais entre arquitetos e desenvolvedores devem ser extintas, deve ser formada uma counicação bidirecional para que todos entendam o objetivo e se caso o projeto dê indicios de "fugir" da expectativa haver alinhamento para reorganizar o caminho a ser trilhado e ambos os envolvidos possam auxiliar aqueles que ainda possuem alguma dificuldade em determinada etapa do projeto, seja em compreender ou aprimorar o produto. 
 
 
 
