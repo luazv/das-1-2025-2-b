@@ -234,14 +234,14 @@ Essa técnica reduz tempo de ciclo. Não imediatamente, mas ao longo do tempo, c
 
 # 04 set 2025
 
-* 1. Arquitetura X Design 
+* Arquitetura X Design 
 
 Como visto anteriormente o arquiteto deve ter uma visão ampliada de todo espaço e de "tudo" que está sendo realizado e assim ele irá conectar o cliente ao desenvolvedor e é nessa transição que pode haver uma confusão entre as responsabilidades de cada membro da equipe e a arquitetura e o design. 
 
 * E como isso pode ser resolvido? Por meio da comunicação, como o ditado popular "quem tem boca vai a Roma" assim também acontece no sucesso de um projeto se houver comunicação entre todos os envolvidos que fazem o projeto ser um projeto. Não deve haver uma quebra de expectativa entre arquiteto, desenvolvedores e usuário final (cliente). Sendo assim as barreiras físicas e virtuais entre arquitetos e desenvolvedores devem ser extintas, deve ser formada uma counicação bidirecional para que todos entendam o objetivo e se caso o projeto dê indicios de "fugir" da expectativa haver alinhamento para reorganizar o caminho a ser trilhado e ambos os envolvidos possam auxiliar aqueles que ainda possuem alguma dificuldade em determinada etapa do projeto, seja em compreender ou aprimorar o produto. 
 Resumidamente a arquitetura não "termina' ela estará presente no design para ser o norte do projeto. 
 
-* 2. Arquiteto modelo T
+* Arquiteto modelo T
 
 O que seria um arquiteto modelo T? Primeiro, deve-se levar em conta que o arquiteto deve ter conhecimento sobre "tudo" que possível, mas ele não irá ter profundidade de conhecimento em tudo, porque é meramente impossível saber tudo de tudo, claro que ele deve fazer o que tiver ao seu alcance para ser fundamental na essência e complexidade da entrega do produto final, mas ele não irá ter o grau técnico em todas as áreas, então levando em consideração uma pirâmide em que o topo é "O que você sabe", ou seja tecnologias, frameworks, linguagens e ferramentos, o meio da pirâmide sendo "o que você sabe que não sabe", coisas que você ouviu falar, mas não tem um grande grau de conhecimento e o final da pirãmide sendo "o que você não sabe que não sabe", sendo endo inúmeras tecnologias, ferramentas e etc que seriam soluções perfeitas para os maiores problemas dos softwares, nessa pirâmide o arquiteto deve estar no topo e no meio. 
 
