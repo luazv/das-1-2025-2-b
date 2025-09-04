@@ -256,5 +256,5 @@ O arquiteo deve ver os trade-offs. E o que seria isso? é uma situação em que,
 Um exemplo:
 
 Lembra quando em determinada aula da escola o professor fazia a pergunta: O que você quer ser quando crescer? 
-Então ele ensinava matérias que formavama base, mas não profundidade para você já sair da escola e se tornar um profissional, mas ele lhe mostrava nortes para escolher uma faculdade ou curso técnico e com isso você conseguiu escolher. Dessa mesma forma é o arquiteto, ele lhe dá o norte e você escolhe o campo profissional. Digamos que o arquiteto é seu professor, você continua sendo o aluno e o seu campo profissional é o projeto de software. 
+Então ele ensinava matérias que formavam base, mas não profundidade para você já sair da escola e se tornar um profissional, mas ele lhe mostrava nortes para escolher uma faculdade ou curso técnico e com isso você conseguiu escolher. Dessa mesma forma é o arquiteto, ele lhe dá o norte e você escolhe o campo profissional. Digamos que o arquiteto é seu professor, você continua sendo o aluno e o seu campo profissional é o projeto de software. 
 
