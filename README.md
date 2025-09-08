@@ -258,3 +258,19 @@ Um exemplo:
 Lembra quando em determinada aula da escola o professor fazia a pergunta: O que você quer ser quando crescer? 
 Então ele ensinava matérias que formavam base, mas não profundidade para você já sair da escola e se tornar um profissional, mas ele lhe mostrava nortes para escolher uma faculdade ou curso técnico e com isso você conseguiu escolher. Dessa mesma forma é o arquiteto, ele lhe dá o norte e você escolhe o campo profissional. Digamos que o arquiteto é seu professor, você continua sendo o aluno e o seu campo profissional é o projeto de software. 
 
+# 08 set 2025
+Trade-offs 
+(Compensação)
+
+Não existe certo e errado. Como diz qualquer desenvolvedor, depende. 
+
+A escolha entre usar tópicos ou filas no sistema de leilão depende do que é mais importante para o projeto. Tópicos são melhores para crescer o sistema facilmente, pois novos serviços podem receber mensagens sem mudar os antigos, mas têm menos segurança, mesmo formato de mensagem para todos e são mais difíceis de monitorar e escalar. Já as filas dão mais segurança, permitem formatos diferentes para cada serviço e são mais fáceis de controlar e escalar, mas exigem mais trabalho para adicionar novos serviços. Por isso, a melhor escolha depende das necessidades do sistema.
+
+Qual a diferença com banco de dados ?E esse tópico?
+-   Trabalha com memória, tudo fica armazenado na memória
+-   Tem uma performace maior
+-   Conexão em um ponto central 
+
+E é assim que funciona com notificações de promoções que recebemos diariamente ou mensagens em grupos que você é adicionado.
+
+
