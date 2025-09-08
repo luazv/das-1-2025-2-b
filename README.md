@@ -264,13 +264,32 @@ Trade-offs
 
 Não existe certo e errado. Como diz qualquer desenvolvedor, depende. 
 
-A escolha entre usar tópicos ou filas no sistema de leilão depende do que é mais importante para o projeto. Tópicos são melhores para crescer o sistema facilmente, pois novos serviços podem receber mensagens sem mudar os antigos, mas têm menos segurança, mesmo formato de mensagem para todos e são mais difíceis de monitorar e escalar. Já as filas dão mais segurança, permitem formatos diferentes para cada serviço e são mais fáceis de controlar e escalar, mas exigem mais trabalho para adicionar novos serviços. Por isso, a melhor escolha depende das necessidades do sistema.
+Para o sistema de leilão onde um lance gerado precisa ser processado simultaneamente por vários serviços (Capturar, Rastrear e Analisar), a arquitetura baseada em tópico (publish/subscribe) é a melhor opção, pois permite que a mensagem seja publicada uma única vez e entregue a todos os consumidores inscritos de forma paralela e desacoplada, facilitando a escalabilidade e manutenção, enquanto o uso de filas ponto a ponto exigiria múltiplos envios e maior acoplamento entre produtor e consumidores.
 
 Qual a diferença com banco de dados ?E esse tópico?
 -   Trabalha com memória, tudo fica armazenado na memória
 -   Tem uma performace maior
 -   Conexão em um ponto central 
+-   Menos impacto
+-   Maior mensagem para passar informação adiante  (valor na nuvem fica maior)
 
+1 para muitos (Ex: Grupo de whatsapp da familia)
 E é assim que funciona com notificações de promoções que recebemos diariamente ou mensagens em grupos que você é adicionado.
+
+Na arquitetura de fila...
+
+-  Tópico não guarda mensagem, já a fila guarda. 
+-   Existe um padrão de ordem
+-   Menor redundância 
+-   Mais impacto
+-   Maior acoplamento
+-   Modular a mensagem conforme necessidade de cada um 
+
+1 para 1 
+
+E por isso que não existe certo ou errado, pois irá depender do que você quer fazer. 
+
+Resumindo: No tópico  escrevo apenas uma vez e todos recebem a mesma mensagem, mas caso um dos consumidores seja desativado não recebe a mensagem mais, já a fila tenho que mandar individual, mas caso um consumidor seja desativado ele pode ser ativado posteriormente e recuperar o que foi perdido. na arquiteura se chama fanout, é como um ventilador, ventila para todo mundo o mesma mensagem. 
+
 
 
