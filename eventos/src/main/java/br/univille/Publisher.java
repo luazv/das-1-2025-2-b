@@ -11,5 +11,7 @@ public class Publisher {
         DefaultAzureCredential credential =
         // pede ao serviço para solicitar a identidade do usuario
             new DefaultAzureCredentialBuilder().build();
+
+            
     }
 }
