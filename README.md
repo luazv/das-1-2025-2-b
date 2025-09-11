@@ -292,4 +292,8 @@ E por isso que não existe certo ou errado, pois irá depender do que você quer
 Resumindo: No tópico  escrevo apenas uma vez e todos recebem a mesma mensagem, mas caso um dos consumidores seja desativado não recebe a mensagem mais, já a fila tenho que mandar individual, mas caso um consumidor seja desativado ele pode ser ativado posteriormente e recuperar o que foi perdido. na arquiteura se chama fanout, é como um ventilador, ventila para todo mundo o mesma mensagem. 
 
 
+# 11 set 2025
 
+Codando...
+Projeto: 
+> eventos
