@@ -14,10 +14,13 @@ public class Publisher {
         
         //String javaHome = System.getenv("JAVA_HOME");
 
-        DefaultAzureCredential credential = 
+        //DefaultAzureCredential credential = 
         // pede ao serviço para solicitar a identidade do usuario
         // para conversar com o azure o usuario precisa estar auetnticado 
-            new DefaultAzureCredentialBuilder().build();
+        //    new DefaultAzureCredentialBuilder().build();
+
+        String chave = System.getenv("CHAVE");
+
 
 
         ServiceBusSenderClient senderClient =
@@ -25,7 +28,8 @@ public class Publisher {
             .fullyQualifiedNamespace(servidor)
             //abre um protocolo comum de internet e passa no fire 
             .transportType(AmqpTransportType.AMQP_WEB_SOCKETS)
-            .credential(credential)
+            //.credential(credential)
+            .connectionString(chave)
             .sender()
             .topicName(topicName)
             .buildClient();
