@@ -134,7 +134,7 @@ class C2 implements I {
 
 Prefira Interfaces a Classes. Qual o objetivo? Reduzir acoplamento. 
 
-Prefira Composição a Herança 
+# Prefira Composição a Herança 
 Por que? Na herança herda tudo, a herança expõe para subclasses detalhes de implementação das classes pai. Logo, frequentemente diz-se que
 herança viola o encapsulamento das classes pai, ou seja dificulta todo o desenvolvimento. Utilize as associações. 
 
