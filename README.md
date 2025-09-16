@@ -194,29 +194,29 @@ Para definir uma estrutura da arquitetura são divididas em alguns pontos princi
 2. Características do sistema:
 Requisitos não funcionais 
 Por exemplo:
-Disponibilidade: Grau em que um sistema está operacional e acessível quando necessário.
-
-Confiabilidade: Capacidade de um sistema funcionar corretamente sem falhas por um período determinado.
-
-Testabilidade: Facilidade com que um sistema pode ser testado para identificar defeitos.
-
-Escalabilidade: Capacidade de um sistema aumentar sua performance ou capacidade com o aumento da demanda.
-
-Segurança: Proteção do sistema contra acessos não autorizados e ameaças.
-
-Agilidade: Rapidez e flexibilidade na adaptação e evolução do sistema.
-
-Tolerância a falhas: Capacidade do sistema continuar funcionando mesmo na presença de erros.
-
-Elasticidade: Habilidade do sistema ajustar automaticamente seus recursos conforme a carga.
-
-Recuperabilidade: Facilidade e rapidez com que o sistema pode ser restaurado após uma falha.
-
-Desempenho: Eficiência com que o sistema executa suas funções, geralmente medido por tempo de resposta e uso de recursos.
-
-Implementabilidade: Facilidade de colocar o sistema em funcionamento no ambiente desejado.
-
-Capacidade de aprendizagem: Capacidade do sistema ou equipe de se adaptar e melhorar com base em experiências anteriores.
+        Disponibilidade: Grau em que um sistema está operacional e acessível quando necessário.
+        
+        Confiabilidade: Capacidade de um sistema funcionar corretamente sem falhas por um período determinado.
+        
+        Testabilidade: Facilidade com que um sistema pode ser testado para identificar defeitos.
+        
+        Escalabilidade: Capacidade de um sistema aumentar sua performance ou capacidade com o aumento da demanda.
+        
+        Segurança: Proteção do sistema contra acessos não autorizados e ameaças.
+        
+        Agilidade: Rapidez e flexibilidade na adaptação e evolução do sistema.
+        
+        Tolerância a falhas: Capacidade do sistema continuar funcionando mesmo na presença de erros.
+        
+        Elasticidade: Habilidade do sistema ajustar automaticamente seus recursos conforme a carga.
+        
+        Recuperabilidade: Facilidade e rapidez com que o sistema pode ser restaurado após uma falha.
+        
+        Desempenho: Eficiência com que o sistema executa suas funções, geralmente medido por tempo de resposta e uso de recursos.
+        
+        Implementabilidade: Facilidade de colocar o sistema em funcionamento no ambiente desejado.
+        
+        Capacidade de aprendizagem: Capacidade do sistema ou equipe de se adaptar e melhorar com base em experiências anteriores.
 
 Ou seja, não tem necessidade de saber as funcionalidades do sistema, mas se não houver esses requisitos não funcionais da forma correta, o sistema será comprometido. Eles estão ligados diretamente a expectativa do usuário final.
 
