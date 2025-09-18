@@ -295,5 +295,4 @@ Resumindo: No tópico  escrevo apenas uma vez e todos recebem a mesma mensagem, 
 # 11 set 2025
 
 Codando...
-Projeto: 
 > eventos
