@@ -33,5 +33,7 @@ public class Subscriber {
                 System.out.println("Deu ruim");
             })
             .buildProcessorClient();
+        
+        processorClient.start();
     }
 }
