@@ -23,6 +23,8 @@ public class Subscriber {
             .topicName(topicName)
             .subscriptionName(subscription)
             .receiveMode(ServiceBusReceiveMode.PEEK_LOCK)
-            .processMessage(null)
+            .processMessage(context -> {
+                
+            })
     }
 }
