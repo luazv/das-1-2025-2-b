@@ -1,5 +1,11 @@
 # Design e Arquitetura de Software 1 - 2025/2 Turma B
 
+Não é possível definir o que um arquiteto de software faz, pois é um ecossistema com uma gama de informações que mudam em um curto período de tempo que pode alterar o 
+próprio conceito e função do arquiteto de software, por isso não existe uma definição "correta" para ele, sendo assim ele é moldado conforme as mudanças no mundo tecnológico
+Blueprint é o desenho da estrutura do sistema, mostrando as partes e como elas se conectam — é o “projeto” do software.
+Roadmap é o plano com as etapas e prazos para construir o sistema — é o “roteiro” do desenvolvimento.
+O arquiteto analisa a arquitetura para garantir que o blueprint seja claro e eficiente, e que o roadmap seja viável, para que o sistema funcione bem, seja seguro e fácil de evoluir.
+
 # 31 jul 2025
 
 # O que é uma abstração?
@@ -128,7 +134,7 @@ class C2 implements I {
 
 Prefira Interfaces a Classes. Qual o objetivo? Reduzir acoplamento. 
 
-Prefira Composição a Herança 
+# Prefira Composição a Herança 
 Por que? Na herança herda tudo, a herança expõe para subclasses detalhes de implementação das classes pai. Logo, frequentemente diz-se que
 herança viola o encapsulamento das classes pai, ou seja dificulta todo o desenvolvimento. Utilize as associações. 
 
@@ -180,19 +186,51 @@ Observer
 
 
 # 28 ago 2025
-Para definir uma estrutura da arquitetura são divididas em três pontos principais:
+Para definir uma estrutura da arquitetura são divididas em alguns pontos principais:
 
-1. Características da arquitetura
-Requisitos não funcionais, ou seja, não tem necessidade de saber as funcionalidades do sistema, mas se não houver esses requisitos não funcionais da forma correta, o sistema será comprometido. Eles estão ligados diretamente a expectativa do úsuario final.
+1. Estrutura do sistema:
+(como microsserviços, camadas ou microkernel)
 
-2. Princípios do design
--Evitar acoplamento, de que maneira? Por meio da troca de mensagem assincrona. É uma maneira de um serviço que tem algo importante alerta a mensagem e quem tem interesse fica esperando e ouve essas mensagens importantes. 
--Uma boa prática que deve ser seguida
+2. Características do sistema:
+Requisitos não funcionais 
+Por exemplo:
+        Disponibilidade: Grau em que um sistema está operacional e acessível quando necessário.
+        
+        Confiabilidade: Capacidade de um sistema funcionar corretamente sem falhas por um período determinado.
+        
+        Testabilidade: Facilidade com que um sistema pode ser testado para identificar defeitos.
+        
+        Escalabilidade: Capacidade de um sistema aumentar sua performance ou capacidade com o aumento da demanda.
+        
+        Segurança: Proteção do sistema contra acessos não autorizados e ameaças.
+        
+        Agilidade: Rapidez e flexibilidade na adaptação e evolução do sistema.
+        
+        Tolerância a falhas: Capacidade do sistema continuar funcionando mesmo na presença de erros.
+        
+        Elasticidade: Habilidade do sistema ajustar automaticamente seus recursos conforme a carga.
+        
+        Recuperabilidade: Facilidade e rapidez com que o sistema pode ser restaurado após uma falha.
+        
+        Desempenho: Eficiência com que o sistema executa suas funções, geralmente medido por tempo de resposta e uso de recursos.
+        
+        Implementabilidade: Facilidade de colocar o sistema em funcionamento no ambiente desejado.
+        
+        Capacidade de aprendizagem: Capacidade do sistema ou equipe de se adaptar e melhorar com base em experiências anteriores.
 
-3. Decisões da arquitetura 
-É a escolha no inicio do projeto que irar permanecer até o final do projeto, ou seja, será a tecnologia utilizada naquele sistema e o mais "aconselhável" seria a tecnologia que mais temos intimidade. Dessa forma irá dominar de uma maneira mais eficaz e não irá perder tempo aprendendo outra tecnologia e realizando o projeto, mas utilizando esse tempo que seria para aprender essa nova tecnologia irá aprimorar seu projeto. 
+Ou seja, não tem necessidade de saber as funcionalidades do sistema, mas se não houver esses requisitos não funcionais da forma correta, o sistema será comprometido. Eles estão ligados diretamente a expectativa do usuário final.
 
-Esses três pontos guiam o estilo de arquitetura. 
+
+3. Decisões de arquitetura:
+É a escolha no inicio do projeto que irar permanecer até o final do projeto, ou seja, será a tecnologia utilizada naquele sistema e o mais "aconselhável" seria a tecnologia que mais temos intimidade. Dessa forma irá dominar de uma maneira mais eficaz e não irá perder tempo aprendendo outra tecnologia e realizando o projeto, mas utilizando esse tempo que seria para aprender essa nova tecnologia irá aprimorar seu projeto.
+As decisões da arquitetura formam os limites do sistema e orientam as equipes de desenvolvimento sobre o que é ou não permitido.
+
+4. Princípios de design:
+É uma maneira de evitar acoplamento, de que maneira? 
+Por meio da troca de mensagem assincrona. É uma maneira de um serviço que tem algo importante alerta a mensagem e quem tem interesse fica esperando e ouve essas mensagens importantes. Uma boa prática que deve ser seguida
+Alguma regra estabelecida para determinada aplicação e melhor desempenho.
+
+Esses pontos guiam o estilo de arquitetura. 
 
 # 01 set 2025
 
@@ -295,4 +333,6 @@ Resumindo: No tópico  escrevo apenas uma vez e todos recebem a mesma mensagem, 
 # 11 set 2025
 
 Codando...
+> eventos
+Projeto: 
 > eventos
