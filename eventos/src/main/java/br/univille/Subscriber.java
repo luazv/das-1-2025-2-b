@@ -9,12 +9,12 @@ public class Subscriber {
     public static void main(String[] args) {
         var topicName = "topic-das1-b";
         var servidor = "sbdas12025a.servicebus.windows.net";
-
+        
         String chave = System.getenv("CHAVE");
+
         String subscription = "subscription-luanaazevedo";
 
-        ServiceBusProcessorClient processorClient = 
-        //configuração do processador 
+        ServiceBusProcessorClient processorClient =
             new ServiceBusClientBuilder()
             .fullyQualifiedNamespace(servidor)
             .connectionString(chave)
@@ -24,7 +24,14 @@ public class Subscriber {
             .subscriptionName(subscription)
             .receiveMode(ServiceBusReceiveMode.PEEK_LOCK)
             .processMessage(context -> {
-                
+                System.out.println(
+                    context.getMessage()
+                    .getBody().toString());
+                context.complete();
             })
+            .processError(context -> {
+                System.out.println("Deu ruim");
+            })
+            .buildProcessorClient();
     }
 }
