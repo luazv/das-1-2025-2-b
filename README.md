@@ -264,7 +264,7 @@ Etapas:
 * Integração (Controle de versão)
 * Implantar (colocar para funcionar na empresa)
 * Operar (monitorar, controlar, está melhor que a última versão?)
-8Comentários contínuos (feedback)
+* Comentários contínuos (feedback)
 
 Mas não finaliza no último tópico, pois é um ciclo. Esse ciclo faz nascer a colaboração e um ponto principal é todos sabendo tudo. Como assim? Todos sabem resolver um erro, não existe erro de uma pessoa, mas erro de toda equipe caso haja algo. Isso é devOps como cultura, mas como cargo há uma equipe somente para isso e esses dois modelos funcionam, não existe modelo certo ou errado. 
 
