@@ -144,7 +144,7 @@ Exemplo de modelagem de dados:
 A classe sendo Animal e as subclasses sendo gato e cachorro. Concorda que o gato não pode tornar-se um cachorro? Nesse caso usa-se a herança, mas em um
 outro contexto se a classe for Pessoa e as subclasses funcionários e clientes não é adequado, pois uma vez modelado assim o funcionário não pode tornar-se cliente.
 
-# Principio Demiter (Principio do menor conhecimento)**
+# Principio Demiter (Principio do menor conhecimento)
 de sua própria classe (caso 1)
 
 de objetos passados como parâmetros (caso 2)
