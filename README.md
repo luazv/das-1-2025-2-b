@@ -145,15 +145,7 @@ A classe sendo Animal e as subclasses sendo gato e cachorro. Concorda que o gato
 outro contexto se a classe for Pessoa e as subclasses funcionários e clientes não é adequado, pois uma vez modelado assim o funcionário não pode tornar-se cliente.
 
 # Principio Demiter (Principio do menor conhecimento)
-de sua própria classe (caso 1)
-
-de objetos passados como parâmetros (caso 2)
-
-de objetos criados pelo próprio método (caso 3)
-
-de atributos da classe do método (caso 4)
-
-Todo o código chama um objeto
+É um princípio com baixo nível de acoplamento, ele interage apenas com os objetos relacionados diretamente a ele. Com essa limitação facilita a manutenção e reduz acoplamento. 
 
 # Open/Closed Principle
     (Princípio do Aberto/Fechado)
