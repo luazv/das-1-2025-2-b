@@ -87,7 +87,7 @@ Toda classe deve ser coesa, ou seja cada classe com sua funcionalidade. E quais 
  Indica quanto um módulo depende de outro para funcionar. Códigos desacoplados são aqueles de relação fraca, e não dependem de outros para fazer sua funcionalidade básica. É sempre desejável um baixo nível de acoplamento.
 
 Quando há baixo acoplamento, a aplicação fica mais flexível, reusável e mais organizada.
-Exemplo: USB 
+
 
 # 07 ago 2025
 # Clean code & SOLID
