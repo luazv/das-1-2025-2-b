@@ -86,7 +86,7 @@ Toda classe deve ser coesa, ou seja cada classe com sua funcionalidade. E quais 
  Indica quanto um módulo depende de outro para funcionar. Códigos desacoplados são aqueles de relação fraca, e não dependem de outros para fazer sua funcionalidade básica. É sempre desejável um baixo nível de acoplamento.
 
 Quando há baixo acoplamento, a aplicação fica mais flexível, reusável e mais organizada.
-Exemplo: USB 
+
 
 # 07 ago 2025
 # Clean code & SOLID
@@ -143,16 +143,8 @@ Exemplo de modelagem de dados:
 A classe sendo Animal e as subclasses sendo gato e cachorro. Concorda que o gato não pode tornar-se um cachorro? Nesse caso usa-se a herança, mas em um
 outro contexto se a classe for Pessoa e as subclasses funcionários e clientes não é adequado, pois uma vez modelado assim o funcionário não pode tornar-se cliente.
 
-**Principio Demiter (Principio do menor conhecimento)**
-de sua própria classe (caso 1)
-
-de objetos passados como parâmetros (caso 2)
-
-de objetos criados pelo próprio método (caso 3)
-
-de atributos da classe do método (caso 4)
-
-Todo o código chama um objeto
+# Principio Demiter (Principio do menor conhecimento)
+É um princípio com baixo nível de acoplamento, ele interage apenas com os objetos relacionados diretamente a ele. Com essa limitação facilita a manutenção e reduz acoplamento. 
 
 # Open/Closed Principle
     (Princípio do Aberto/Fechado)
@@ -281,7 +273,7 @@ Etapas:
 * Integração (Controle de versão)
 * Implantar (colocar para funcionar na empresa)
 * Operar (monitorar, controlar, está melhor que a última versão?)
-8Comentários contínuos (feedback)
+* Comentários contínuos (feedback)
 
 Mas não finaliza no último tópico, pois é um ciclo. Esse ciclo faz nascer a colaboração e um ponto principal é todos sabendo tudo. Como assim? Todos sabem resolver um erro, não existe erro de uma pessoa, mas erro de toda equipe caso haja algo. Isso é devOps como cultura, mas como cargo há uma equipe somente para isso e esses dois modelos funcionam, não existe modelo certo ou errado. 
 
