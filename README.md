@@ -10,8 +10,7 @@ O arquiteto analisa a arquitetura para garantir que o blueprint seja claro e efi
 
 # O que é uma abstração?
 
-É uma maneira de adquirir conhecimento de fases importantes de um problema com o objetivo de criar
-uma solução para resolução.
+É uma maneira de adquirir conhecimento de fases importantes de um problema com o objetivo de criar uma solução para resolução.
 
 # Por que a complexidade é um desafio?
 
@@ -165,7 +164,7 @@ Uma classe deve estar fechada para modificações e aberta para extensões.
 # Liskov Substitution Principle
     (Princípio da Substituição de Liskov)
 
-Acontece quando há uma super classe, e eu tenho várias subclasses que herdam desse pai, certo. Para que a subclasse, a classe de as filhos, tenham exatamente os mesmos métodos do pai. Pra eu poder trocar entre filhos sem quebrar o código, essa é a ideia.
+Acontece quando há uma super classe, e eu tenho várias subclasses que herdam desse pai. Para que a subclasse, a classe de as filhos, tenham exatamente os mesmos métodos do pai. Pra eu poder trocar entre filhos sem quebrar o código, essa é a ideia.
 
 
 # Padrões de Projeto
@@ -175,14 +174,32 @@ Link site Design Patterns: https://refactoring.guru/design-patterns
 Soluções para problemas que encontramos no código. 
 
 # 21 ago 2025
+> O que são esses padrões de design e qual a finalidade?
+Eles são formas de soluções para problemas comuns
+em design de software. Para cada padrão há uma personalização para resolver 
+determinado design no código que está sendo trabalhado. 
 
-Tipo: Creational Patterns
-1. Singleton
-é um padrão de design criacional que permite garantir que uma classe tenha apenas uma instância, ao mesmo tempo em que fornece um ponto de acesso global a essa instância.
+Tipo estudado: Creational Patterns (Padrões de criação)
+Esses padrões fornecem vários mecanismos de criação de objetos, que aumentam a flexibilidade e a reutilização do código existente.
+Nesse padrão há 5 tipos, que são: 
 
-Observer 
-é um padrão de design comportamental que permite definir um mecanismo de assinatura para notificar vários objetos sobre quaisquer eventos que aconteçam com o objeto que eles estão observando.
+1. Factory Method
+2. Abstract Factory
+3. Builder
+4. Prototype
+5. Singleton
 
+5. Singleton
+O tipo singleton é um padrão de design criacional que permite garantir que uma classe tenha apenas uma instância, ao mesmo tempo em que fornece um ponto de acesso global a essa instância.
+
+Tipo estudado: Behavioral patters
+Esses padrões estão relacionados a algoritmos e à atribuição de responsabilidades entre objetos.
+
+Observer (Observador)
+
+O observer, também conhecido como assinante de eventos ou ouvinte é um padrão de design comportamental que permite definir um mecanismo de assinatura para notificar vários objetos sobre quaisquer eventos que aconteçam com o objeto que eles estão observando.
+
+Exemplo: Grupo da família
 
 
 # 28 ago 2025
@@ -289,7 +306,7 @@ Porque para ele a amplitude é mais valioso que profundade. Caso em algum moment
 
 Arquitetura é o que você não consegue pesquisar com o Google
 
-O arquiteo deve ver os trade-offs. E o que seria isso? é uma situação em que, ao escolher uma opção, é necessário abrir mão de outra, resultando em ganhos em um aspecto e perdas em outro.
+O arquiteto deve ver os trade-offs. E o que seria isso? é uma situação em que, ao escolher uma opção, é necessário abrir mão de outra, resultando em ganhos em um aspecto e perdas em outro.
 
 Um exemplo:
 
@@ -335,3 +352,9 @@ Resumindo: No tópico  escrevo apenas uma vez e todos recebem a mesma mensagem, 
 Codando...
 > eventos
 
+
+# 15 set 2025 
+
+Codando...
+> publisher
+> subscriber 
