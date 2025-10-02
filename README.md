@@ -350,3 +350,11 @@ Codando...
 Codando...
 > publisher
 > subscriber 
+
+# 02 out 2025
+
+Codando...
+>Consumer
+>Producer
+
+Exemplo: Comprei algo na amazon, então as etapas acontecem conforme no código e sequência de mensagens no Producer. 
