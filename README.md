@@ -358,3 +358,21 @@ Codando...
 >Producer
 
 Exemplo: Comprei algo na amazon, então as etapas acontecem conforme no código e sequência de mensagens no Producer. 
+
+# 06 out 2025
+
+Definição das características arquiteturais
+
+O desafio da equipe nesse capítulo é analisar todas as coisas que o software deve fazer que não estão diretamente relacionadas à funcionalidade do domínio. Sendo assim, as características arquiteturais.
+Os arquitetos não gostam do termo "requisitos não funcionais" para caracterizar essas outras funcionalidades por isso é definida como caracteristicas, pois mostra a preocupaçãocrítica para o sucesso. 
+Dentro da característica da arquitetura atende a 3 critérios:
+-Especifica uma consideração de design fora do domínio
+É um aspecto do projeto que não está relacionado diretamente às funções principais do sistema, mas que precisa ser considerado para o funcionamento correto.
+-Influencia algum aspecto estrutural de design
+Essa questão adicional pode influenciar como o sistema é montado ou organizado internamente.
+-É essencial ou importante para o sucesso da aplicação
+Embora não esteja explícito nos documentos de requisitos, esse aspecto é fundamental para que o sistema funcione bem, seja seguro e atenda às expectativas dos usuários e normas.
+
+Trade-offs e  arquitetura menos pior
+As arquiteturas suportam poucas características porque cada uma demanda esforço de design e impacta as outras. É comum que os arquitetos façam concessões entre características conflitantes para equilibrar o sistema. Buscar a “melhor” arquitetura é difícil; o ideal é a “menos pior”. Arquiteturas com muitas características tendem a ser complexas e difíceis de manter. Por isso, é importante criar projetos iterativos que possam ser ajustados ao longo do tempo.
+
