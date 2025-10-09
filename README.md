@@ -376,3 +376,17 @@ Embora não esteja explícito nos documentos de requisitos, esse aspecto é fund
 Trade-offs e  arquitetura menos pior
 As arquiteturas suportam poucas características porque cada uma demanda esforço de design e impacta as outras. É comum que os arquitetos façam concessões entre características conflitantes para equilibrar o sistema. Buscar a “melhor” arquitetura é difícil; o ideal é a “menos pior”. Arquiteturas com muitas características tendem a ser complexas e difíceis de manter. Por isso, é importante criar projetos iterativos que possam ser ajustados ao longo do tempo.
 
+# 09 out 2025
+
+Circuit Breaker (Padrão disjuntor) - Padrão recente 
+* Como funciona?
+Quando ele identifica tentativas em um serviço que está gerando falhas que acaba levando grande tempo para recuperação, ele bloqueia o acesso
+* Mas por que ele faz isso?
+Ao bloquear ele evita a repetição desse acesso malsucedido e dessa forma o sistema tem uma recuperação mais rápida, além de evitar uma perda parcial de conectividade ou até uma falha completa do serviço
+
+* Existe tr~es princípios:
+
+No estado Aberto, o disjuntor bloqueia imediatamente todas as chamadas para a operação protegida, retornando uma exceção ou um valor padrão, sem tentar executar a lógica real. Esse estado é mantido por um período de tempo determinado por um temporizador. A ideia é dar ao sistema tempo suficiente para se recuperar da falha, seja por reinício de serviços, reestabelecimento de conexões ou outras ações externas. Quando o tempo expira, o disjuntor entra no estado Semiaberto, onde permite apenas algumas chamadas de teste passarem.
+
+No estado Semiaberto, o disjuntor verifica se a operação voltou ao normal. Se um número configurado de chamadas for bem-sucedido de forma consecutiva, ele considera que o problema foi resolvido e retorna ao estado Fechado, com o contador de falhas zerado. No entanto, se qualquer uma dessas chamadas falhar, o disjuntor volta imediatamente ao estado Aberto, reiniciando o temporizador. Esse ciclo garante que o sistema só volte a operar plenamente quando for seguro, reduzindo o impacto das falhas e melhorando a estabilidade geral. Além disso, o padrão pode ser personalizado, como aumentar progressivamente o tempo de espera no estado Aberto (backoff) ou gerar eventos de mudança de estado para monitoramento e alertas
+
