@@ -390,3 +390,26 @@ No estado Aberto, o disjuntor bloqueia imediatamente todas as chamadas para a op
 
 No estado Semiaberto, o disjuntor verifica se a operação voltou ao normal. Se um número configurado de chamadas for bem-sucedido de forma consecutiva, ele considera que o problema foi resolvido e retorna ao estado Fechado, com o contador de falhas zerado. No entanto, se qualquer uma dessas chamadas falhar, o disjuntor volta imediatamente ao estado Aberto, reiniciando o temporizador. Esse ciclo garante que o sistema só volte a operar plenamente quando for seguro, reduzindo o impacto das falhas e melhorando a estabilidade geral. Além disso, o padrão pode ser personalizado, como aumentar progressivamente o tempo de espera no estado Aberto (backoff) ou gerar eventos de mudança de estado para monitoramento e alertas
 
+# 13 out 2025
+
+* CQRS
+(Segregação de Responsabilidade de Consulta de Comando) é um padrão de design que separa as operações de leitura e gravação de
+um armazenamento de dados em modelos de dados separados.
+
+Quanto maior o crescimento do aplicativo mais difícil será de otimizar as operações de leitura e gravação em um BDA. Gerando:
+incompatibilidade de dados;
+Contenção de bloqueio;
+Problemas de desempenho;
+Desafios de segurança. 
+
+CQRS (Command Query Responsibility Segregation) é uma arquitetura que separa os modelos de leitura e gravação, podendo compartilhar um banco de dados ou usar armazenamentos distintos para otimizar desempenho, escalabilidade e clareza do sistema. O modelo de gravação foca em comandos e lógica de domínio para garantir consistência, enquanto o modelo de leitura é otimizado para consultas rápidas, muitas vezes utilizando esquemas específicos ou réplicas somente leitura. Essa separação permite dimensionamento independente, melhora a segurança, facilita a manutenção e simplifica consultas ao evitar junções complexas, especialmente quando usado com eventos para sincronizar dados entre os dois modelos.
+
+* Fundamentos dos padrões de arquitetura
+
+- Grande Bola de lama
+Padrão onde o código é confuso e vira um espaguete, pois cresceu de forma desorganizada, com reparos rápidos e repetitivos. Tendo como características com informações duplicadas e se tornam globais. 
+E o arquiteto tenta evitar esse sistema, pois ele dificulta a correção, evolução, mas é "comum" sistemas assim. Com módulos conectados e caso "toque" em um acaba afetando outros módulos. Quebra todos os padrões arquiteturais possíveis.
+
+- Arquitetura unitária 
+Um software que rodava em apenas um computador. 
+
