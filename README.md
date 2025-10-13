@@ -413,3 +413,4 @@ E o arquiteto tenta evitar esse sistema, pois ele dificulta a correção, evolu�
 - Arquitetura unitária 
 Um software que rodava em apenas um computador. 
 
+A arquitetura de três camadas, usada bastante nos anos 1990, divide o sistema em três partes: banco de dados, aplicação (servidores) e a parte que o usuário vê (HTML e JavaScript). Isso ajuda a deixar o sistema mais fácil de crescer, arrumar e distribuir. Para as partes conversarem, usavam protocolos como CORBA e DCOM. Com o tempo, surgiram novas ferramentas, como filas de mensagens e sistemas que funcionam por eventos, que facilitam o trabalho sem precisar entender todos os detalhes técnicos. Isso ajudou a criar sistemas mais fortes e que podem melhorar com o tempo.
