@@ -413,4 +413,33 @@ E o arquiteto tenta evitar esse sistema, pois ele dificulta a correção, evolu�
 - Arquitetura unitária 
 Um software que rodava em apenas um computador. 
 
-A arquitetura de três camadas, usada bastante nos anos 1990, divide o sistema em três partes: banco de dados, aplicação (servidores) e a parte que o usuário vê (HTML e JavaScript). Isso ajuda a deixar o sistema mais fácil de crescer, arrumar e distribuir. Para as partes conversarem, usavam protocolos como CORBA e DCOM. Com o tempo, surgiram novas ferramentas, como filas de mensagens e sistemas que funcionam por eventos, que facilitam o trabalho sem precisar entender todos os detalhes técnicos. Isso ajudou a criar sistemas mais fortes e que podem melhorar com o tempo.
+- Cliente/Servidor 
+Conexão em um mesmo banco de dados e troca de informações.
+
+# 16 out 2025
+
+## Retry pattern
+
+-> Pode considerar que está dentro do Circuit Breaker
+Habilite um aplicativo para lidar com falhas transitórias quando ele tentar se conectar a um serviço ou recurso de rede, repetindo de forma transparente uma operação com falha. Isso pode melhorar a estabilidade do aplicativo.
+
+Estratégias de repetição:
+
+* Cancelar. Se a falha indicar que a falha não é transitória ou é improvável que seja bem-sucedida se repetida, o aplicativo deverá cancelar a operação e relatar uma exceção.
+
+* Tente novamente imediatamente. (Retry immediately.) Se a falha específica relatada for incomum ou rara, como um pacote de rede corrompido durante a transmissão, o melhor curso de ação pode ser repetir imediatamente a solicitação.
+
+* Tente novamente após o atraso. (Retry after delay.) Se a falha for causada por uma das falhas de conectividade ou ocupadas mais comuns, a rede ou o serviço poderá precisar de um curto período enquanto os problemas de conectividade são corrigidos ou a lista de pendências de trabalho é limpa, portanto, atrasar programaticamente a repetição é uma boa estratégia. Em muitos casos, o período entre as repetições deve ser escolhido para distribuir solicitações de várias instâncias do aplicativo da maneira mais uniforme possível para reduzir a chance de um serviço ocupado continuar sobrecarregado.
+
+##  Fundamentos dos padrões de arquitetura
+Três camadas
+A arquitetura de três camadas correspondia aos protocolos no nível da rede, como CORBA (Common Object Request Broker Architecture) e DCOM (Distributed Component Object Model) que facilitavam criar arquiteturas distribuídas.
+
+Comunicação entre duas linguagens.
+
+-> Monolítico
+Código junto em um mesmo lugar. Um microsserviço. Todas as funcionalidades em um mesmo repositório e módulos acoplados, ou seja, estão conectados. 
+
+* Recomendação de livro: Arquitetura de software: As partes difíceis. 
+
+
