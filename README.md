@@ -443,3 +443,27 @@ Código junto em um mesmo lugar. Um microsserviço. Todas as funcionalidades em 
 * Recomendação de livro: Arquitetura de software: As partes difíceis. 
 
 
+# 20 e 23 out 2025
+A arquitetura em camadas, também conhecida como o estilo de arquitetura n-tier (multicamadas), é um dos estilos mais comuns.
+Ele é o padrão de fato da maioria das aplicações, basicamente por sua simplicidade, familiaridade e baixo custo. 
+
+Na arquitetura em camadas, os componentes do sistema são divididos em camadas horizontais, cada uma com uma função específica.
+As camadas mais comuns são: apresentação, negócio, persistência e banco de dados.
+Essa separação facilita a manutenção, o reuso e a organização do código.
+Em sistemas menores, as camadas de negócio e persistência podem ser combinadas.
+Já em aplicações maiores e mais complexas, podem existir cinco ou mais camadas.
+
+A camada de apresentação é responsável pela interface com o usuário, exibindo informações e recebendo dados.
+A camada de negócio contém as regras e a lógica que definem o funcionamento da aplicação.
+A camada de persistência gerencia a comunicação com o banco de dados, armazenando e recuperando informações.
+Já a camada de banco de dados é onde os dados realmente são mantidos.
+
+A arquitetura em camadas é uma opção para aqueles que estão em dúvidas em relação a arquitetura do projeto e também para aplicaçoes que são pequenas ou a equipe tem baixo custo para iniciar.
+
+
+Com o crescimento, torna-se complexa, difícil de testar e de implementar.
+Pequenas mudanças exigem reimplementação completa, aumentando o risco e o esforço.
+A confiabilidade é média, mas a escalabilidade e a elasticidade são muito baixas.
+O desempenho é limitado e requer técnicas adicionais para melhorar.
+
+
