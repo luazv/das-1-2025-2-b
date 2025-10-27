@@ -466,4 +466,18 @@ Pequenas mudanças exigem reimplementação completa, aumentando o risco e o esf
 A confiabilidade é média, mas a escalabilidade e a elasticidade são muito baixas.
 O desempenho é limitado e requer técnicas adicionais para melhorar.
 
+# 27 out 2025
+
+Estilo de arquitetura Pipeline
+
+Conjunto de programas com os canais formando uma comunicação unidirecional entre os filtros.
+A comunicação acontece entre os filtros. Os módulos são comunicados com suas tarefas específicas e elas são interligadas para serem conectadas para a formação de um programa para que cada um faça uma tarefa e no fim apenas juntar duas tarefas sem muito trabalho. 
+
+Canal: Conecta um programa em um outro programa, mas cada linguagem e sistema operacional implementa de uma forma diferente.
+Filtro: São pontos iniciais. Podendo ser produtor (quem faz), transformador (realiza alguma mudança se necessário e envia para a saída), verificador (testa), consumidor (resultado final).
+
+*Ps ax: Comando do linux que mostra os programas em execução* 
+Para saber o código fonte > curl e o http
+
+
 
