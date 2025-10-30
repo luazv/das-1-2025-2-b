@@ -1,4 +1,4 @@
-package br.univille.singleton;
+package br.univille.observer;
 
 public class Cliente {
     public static void main(String[] args) {
