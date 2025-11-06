@@ -40,8 +40,8 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-	</dependencies>
-	<dependency>
+
+		<dependency>
 			<groupId>br.univille</groupId>
 			<artifactId>microkernel-interface</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
@@ -51,6 +51,9 @@
 			<artifactId>microkernel-plugin</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+
+	</dependencies>
+
 
 	<build>
 		<plugins>
