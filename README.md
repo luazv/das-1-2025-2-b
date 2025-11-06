@@ -466,7 +466,8 @@ Pequenas mudanças exigem reimplementação completa, aumentando o risco e o esf
 A confiabilidade é média, mas a escalabilidade e a elasticidade são muito baixas.
 O desempenho é limitado e requer técnicas adicionais para melhorar.
 
-# 27 out 2025
+# 27 out 2025 e 30 out 2025
+
 
 Estilo de arquitetura Pipeline
 
@@ -480,4 +481,10 @@ Filtro: São pontos iniciais. Podendo ser produtor (quem faz), transformador (re
 Para saber o código fonte > curl e o http
 
 
+# 03 nov 2025
 
+* Estilo de arquitetura Microkernel
+
+# 06 nov 2025
+Codando...
+> Projetos microkernel
