@@ -8,7 +8,7 @@
     <version>1.0</version>
     <packaging>pom</packaging>
     <name>Multi Project: DAS-1-2025-2-B</name>
-
+    
     <modules>
         <module>solid</module>
         <module>designpatterns</module>
