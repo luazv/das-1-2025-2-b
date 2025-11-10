@@ -488,6 +488,9 @@ Para saber o código fonte > curl e o http
 # 03 nov 2025
 
 * Estilo de arquitetura Microkernel
+Esse estilo de arquitetura possui dois componentes principais, sendo um sistema central com funcionalidades minimas para rodar o sistema e o plug-in que são autonomos e independentes ele serve para melhorar e aumentar recursos considerados adicionais para aprimorar no sistema central. A comunicação entre esses dois componentes é através de chamada de métodos ou função para a classe. 
+* Registro 
+O sistema central precisa saber quais módulos de plug-in estão disponíveis e como obtê-los. Um modo comum de implementar isso é com um registro de plug-in. Esse registro contém informações sobre cada módulo de plug-in, inclusive coisas como nome, contrato dos dados e detalhes do protocolo de acesso remoto (dependendo de como o plug-in está conectado ao sistema central).
 
 # 06 nov 2025
 Codando...
