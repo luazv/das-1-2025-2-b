@@ -499,17 +499,17 @@ Estilo de Arquitetura Microsserviços
 Nesse estilo os arquitetos esperam que cada serviço inclua todas as partes necessárias para operar de modo independente, inclusive bancos de dados e outros componentes dependentes. 
 Uma característica presente nesse estilo envolve a individualidade dos processos, ou seja, cada serviço roda em cada processo, sendo assim um maior desacoplamento. Muitos desenvolvedores erram ao criar serviços pequenos demais, o que aumenta a complexidade e a comunicação entre eles. O termo “microsserviço” não significa que tudo deve ser minúsculo, e sim que cada serviço deve representar uma parte clara do negócio, com uma função bem definida. Os melhores limites surgem ao observar quais partes precisam trabalhar juntas em uma mesma transação, evitando a necessidade de transações entre vários serviços. Se há muita troca de mensagens entre serviços, isso indica que eles foram divididos em excesso e deveriam ser agrupados. O processo de definir esses limites deve ser feito com testes e ajustes constantes. Assim, o foco deve ser criar serviços coesos, independentes e fáceis de manter. O mais importante não é o tamanho, mas a clareza e a utilidade de cada serviço dentro do sistema.
 
-> Isolamento de dados
+* Isolamento de dados
 O isolamento de dados em microsserviços é comum para diminuir o acoplamento, mas deve ser cuidado quanto ao modular serviços para lembrar das entidades simpes em BD.
 
-> Camada da API
+* Camada da API
 A camada de API nos microsserviços é opcional, mas comum, pois serve como ponto de entrada único para usuários e outros sistemas, realizando tarefas operacionais como roteamento e autenticação. No entanto, ela não deve conter lógica de negócio nem orquestrar serviços, pois isso fere o princípio dos microsserviços, onde cada serviço deve ser autônomo e conter sua própria lógica. Usar a API como mediador transforma a arquitetura em algo tecnicamente particionado, e não por domínio, o que reduz a independência e a coesão dos serviços. Assim, a API deve apenas encaminhar requisições, mantendo a lógica dentro dos próprios microsserviços.
 
-> Reutilização operacional
+* Reutilização operacional
 
 Nessa arquitetura já que faz parte de um dos objetivos diminuir o acoplamento, as equipes envolvidas utilizam o "sidecar", ou seja, uma malha de serviços que garante que todos recebam uma nova funiconalidade, permitindo a unificação da arquitetura. 
 
-> Comunicação 
+* Comunicação 
 Heterogênea: 
 Como a arquitetura de microsserviços é uma arquitetura distribuída, cada serviço pode ser escrito em uma stack tecnológico diferente. Heterogênea sugere que os microsserviços suportam totalmente ambientes poliglotas, nos quais diferentes serviços usam diferentes plataformas.
 Interoperabilidade:
