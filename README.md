@@ -519,7 +519,7 @@ Interoperabilidade:
 Descreve serviços que chamam uns aos outros. Embora os arquitetos nos microsserviços tentem desencorajar as chamadas de métodos transacionais, os serviços normalmente chamam outros serviços via rede para colaborar e enviar/receber informações.
 
 
-13 nov 2025
+# 13 nov 2025
 > Codando...
 Projetos
 app-a
@@ -527,7 +527,7 @@ app-b
 
 Relembrando conceitos: O que é um container docker? Não é um istema operacional, é um programa que atua de forma isolada
 
-17 nov 2025
+# 17 nov 2025
 > Codando...
 Continuação app-a e app-b e teste.rest
 * Utilizando filas
