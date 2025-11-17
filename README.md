@@ -526,3 +526,9 @@ app-a
 app-b
 
 Relembrando conceitos: O que é um container docker? Não é um istema operacional, é um programa que atua de forma isolada
+
+17 nov 2025
+> Codando...
+Continuação app-a e app-b e teste.rest
+* Utilizando filas
+>Components
