@@ -386,7 +386,7 @@ Quando ele identifica tentativas em um serviço que está gerando falhas que aca
 * Mas por que ele faz isso?
 Ao bloquear ele evita a repetição desse acesso malsucedido e dessa forma o sistema tem uma recuperação mais rápida, além de evitar uma perda parcial de conectividade ou até uma falha completa do serviço
 
-* Existe tr~es princípios:
+* Existe três princípios:
 
 No estado Aberto, o disjuntor bloqueia imediatamente todas as chamadas para a operação protegida, retornando uma exceção ou um valor padrão, sem tentar executar a lógica real. Esse estado é mantido por um período de tempo determinado por um temporizador. A ideia é dar ao sistema tempo suficiente para se recuperar da falha, seja por reinício de serviços, reestabelecimento de conexões ou outras ações externas. Quando o tempo expira, o disjuntor entra no estado Semiaberto, onde permite apenas algumas chamadas de teste passarem.
 
